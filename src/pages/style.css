@@ -1,0 +1,46 @@
+.bodyMain {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  z-index: 2;
+  box-sizing: border-box;
+  margin-top: -3rem;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.bodyMain .rows {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .bodyMain {
+    margin-top: -2rem;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .bodyMain {
+    padding: 0 5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .bodyMain {
+    padding: 0 9.25rem;
+  }
+}

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Netflix Sans;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Netflix Sans;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 16px;
+  background: #000;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: Netflix Sans;
+  src: url(../public/fonts/NetflixSans_W_Rg.woff),
+    url(../public/fonts/NetflixSans_W_Rg.woff2);
+  font-weight: 400;
+  display: block;
+}
+
+@font-face {
+  font-family: Netflix Sans;
+  src: url(../public/fonts/NetflixSans_W_Md.woff),
+    url(../public/fonts/NetflixSans_W_Md.woff2);
+  font-weight: 500;
+  display: block;
+}
+
+@font-face {
+  font-family: Netflix Sans;
+  src: url(../public/fonts/NetflixSans_W_Bd.woff),
+    url(../public/fonts/NetflixSans_W_Bd.woff2);
+  font-weight: 700;
+  display: block;
+}
+
+@font-face {
+  font-family: Netflix Sans;
+  src: url(../public/fonts/NetflixSans_W_Blk.woff),
+    url(../public/fonts/NetflixSans_W_Blk.woff2);
+  font-weight: 900;
+  display: block;
+}
