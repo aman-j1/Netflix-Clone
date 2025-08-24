@@ -44,7 +44,7 @@ InputOverlay,
   BottomMargin,
 } from "./style";
 
-import bgImage from "../../../public/images/bgimage.jpg";
+import bgImage from "../../../../public/images/bgimage.jpg";
 const Header = () => {
   return (
     <>
@@ -75,7 +75,7 @@ const Header = () => {
                     <SignInWrap>
                       <SignContainer>
                         <SignContainerInner>
-                          <SignBtn to="/in/login">Sign In</SignBtn>
+                          <SignBtn to="/login">Sign In</SignBtn>
                         </SignContainerInner>
                       </SignContainer>
                     </SignInWrap>

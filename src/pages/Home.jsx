@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../components/Landing Page/Header";
 import "./style.css";
-import Trending from "../components/Trending";
-import ReasonCard from "../components/Card";
-import FAQ from "../components/FAQs";
-import BottomForm from "../components/BottomForm";
-import Footer from "../components/footer";
+import Trending from "../components/Landing Page/Trending";
+import ReasonCard from "../components/Landing Page/Card";
+import FAQ from "../components/Landing Page/FAQs";
+import BottomForm from "../components/Landing Page/BottomForm";
+import Footer from "../components/Landing Page/footer";
 
 
 const LandingPage = () => {

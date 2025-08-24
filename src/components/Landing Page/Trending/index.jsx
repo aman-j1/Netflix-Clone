@@ -27,7 +27,7 @@ import {
   BtnWrap,
   TitleSection
 } from "./style";
-import Modal from "../Modal/index"; // Modal using React Portal
+import Modal from "../Modal/index"; 
 
 import axios from "axios";
 
