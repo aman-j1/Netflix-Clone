@@ -12,12 +12,30 @@ export const FooterWrapper = styled.div`
   width: 100%;
   color: rgba(255, 255, 255, 0.7);
   padding-bottom: 6rem;
+
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+
+  @media (min-width: 600px) {
+    padding: 0 1.5rem;
+  }
+
+  @media (min-width: 960px) {
+    padding: 0 5rem;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0 9.25rem;
+  }
 `;
 
 export const Footers = styled.footer`
   flex-direction: column;
   display: flex;
-  margin-top: -36px;
   width: 100%;
 `;
 
@@ -158,36 +176,36 @@ export const ReCaptchaTerm = styled.div`
     font-weight: 400;
     line-height: 16px;
 
-    &>button{
+    & > button {
       -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    background: none;
-    border-radius: 0;
-    border: 0;
-    box-sizing: content-box;
-    color: inherit;
-    cursor: default;
-    display: inline;
-    font: inherit;
-    letter-spacing: inherit;
-    line-height: inherit;
-    margin: 0;
-    opacity: 1;
-    padding: 0;
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    color: blue;
-    cursor: pointer;
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    user-select: text;
-    border-radius: 0.125rem;
-        color: rgb(68, 142, 244);
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      background: none;
+      border-radius: 0;
+      border: 0;
+      box-sizing: content-box;
+      color: inherit;
+      cursor: default;
+      display: inline;
+      font: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+      margin: 0;
+      opacity: 1;
+      padding: 0;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: blue;
+      cursor: pointer;
+      -webkit-text-decoration: underline;
+      text-decoration: underline;
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+      border-radius: 0.125rem;
+      color: rgb(68, 142, 244);
     }
   }
 `;

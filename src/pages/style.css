@@ -35,6 +35,8 @@
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .loginPage:before {
@@ -44,7 +46,7 @@
   background-position: center center;
   background-size: cover;
   opacity: 0.5;
-  background-image: url('../../public/images/LoginBg.jpg')
+  background-image: url("../../public/images/LoginBg.jpg");
 }
 
 @media screen and (min-width: 600px) {

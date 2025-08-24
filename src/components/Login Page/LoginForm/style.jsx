@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const LoginFormSec = styled.div`
@@ -86,7 +87,6 @@ export const FieldSetInner = styled.div`
   flex-grow: 1;
 `;
 
-
 export const InputLabel = styled.label`
   position: absolute;
   z-index: 1;
@@ -107,23 +107,6 @@ export const InputLabel = styled.label`
   top: 1rem;
 `;
 
-export const InputArea = styled.div`
-  display: inline-flex;
-  vertical-align: text-top;
-  position: relative;
-  flex-wrap: wrap;
-
-  &.focused > label{
-    color: rgba(255, 255, 255, 0.7);
-  font-family: unset;
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 1.5;
-  left: 1rem;
-  right: 1rem;
-  top: 0.5rem;
-  }
-`;
 export const InputFormField = styled.div`
   -webkit-box-align: center;
   align-items: center;
@@ -153,13 +136,37 @@ export const Input = styled.input`
   min-height: 16px;
   min-width: 16px;
   color: inherit;
-  filter: opacity(0%);
   caret-color: rgb(255, 255, 255);
   line-height: 1.5;
   width: 100%;
   direction: ltr;
   padding: 1.5rem 1rem 0.5rem;
+  background: none;
+      border: none;
 `;
+
+export const InputArea = styled.div`
+  display: inline-flex;
+  vertical-align: text-top;
+  position: relative;
+  flex-wrap: wrap;
+
+  &.focused > label {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: unset;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    left: 1rem;
+    right: 1rem;
+    top: 0.5rem;
+  }
+
+  &.focused  input{
+    appearance: unset;
+  }
+`;
+
 export const InputOverlay = styled.div`
   -webkit-box-align: center;
   align-items: center;
@@ -180,3 +187,185 @@ export const InputOverlay = styled.div`
   border-width: 0.0625rem;
   border-color: rgba(128, 128, 128, 0.7);
 `;
+
+export const LoginBtnWrap = styled.div`
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const LoginBtn = styled.div`
+  appearance: none;
+  font-style: inherit;
+  font-variant: inherit;
+  font-stretch: inherit;
+  font-optical-sizing: inherit;
+  font-size-adjust: inherit;
+  font-kerning: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  margin: 0px;
+  opacity: 1;
+  text-decoration: none;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 1;
+  user-select: none;
+  border: 0px;
+  cursor: pointer;
+  fill: currentcolor;
+  position: relative;
+  transition-duration: 250ms;
+  transition-property: background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
+  vertical-align: text-top;
+  width: auto;
+  font-family: unset;
+  font-size: 1rem;
+  font-weight: 500;
+  min-height: 2.5rem;
+  padding: 0.375rem 1rem;
+  border-radius: 0.25rem;
+  background: rgb(229, 9, 20);
+  color: rgb(255, 255, 255);
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+
+  &::after {
+    inset: 0px;
+    position: absolute;
+    transition: inherit;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: calc(0.1875rem);
+    content: "";
+    border-color: rgba(0, 0, 0, 0);
+  }
+`;
+
+export const TextOr = styled.p`
+  margin-block: 0px;
+  margin: 0px;
+  padding: 0px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: unset;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  user-select: text;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+`;
+
+export const ToggleBtn = styled(Link)`
+  appearance: none;
+  font-style: inherit;
+  font-variant: inherit;
+  font-stretch: inherit;
+  font-optical-sizing: inherit;
+  font-size-adjust: inherit;
+  font-kerning: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  margin: 0px;
+  opacity: 1;
+  text-decoration: none;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 1;
+  user-select: none;
+  border: 0px;
+  cursor: pointer;
+  fill: currentcolor;
+  position: relative;
+  transition-duration: 250ms;
+  transition-property: background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
+  vertical-align: text-top;
+  width: auto;
+  font-family: unset;
+  font-size: 1rem;
+  font-weight: 500;
+  min-height: 2.5rem;
+  padding: 0.375rem 1rem;
+  border-radius: 0.25rem;
+  background: rgba(128, 128, 128, 0.4);
+  color: rgb(255, 255, 255);
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+
+  &::after {
+    inset: 0px;
+    position: absolute;
+    transition: inherit;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: calc(0.1875rem);
+    content: "";
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  &:hover{
+            transition-timing-function: cubic-bezier(0.32, 0.94, 0.6, 1);
+        background: rgba(128, 128, 128, 0.3);
+  }
+`;
+
+export const ForgetWrap = styled.div`
+      -webkit-box-flex: 1;
+    flex-grow: 1;
+    margin: 0px;
+    display: inherit;
+    height: auto;
+    width: 100%;
+    pointer-events: none;
+    --wct--layout-container--pointer-events: all;
+`;
+
+export const ForgetWrapInner = styled.div`
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  & > span{
+    margin-block: 0px;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    font-family: unset;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+`;
+
+export const ForgetBtn = styled(Link)`
+      appearance: none;
+    background: none;
+    border: 0px;
+    box-sizing: content-box;
+    display: inline;
+    font: inherit;
+    letter-spacing: inherit;
+    margin: 0px;
+    opacity: 1;
+    padding: 0px;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    user-select: text;
+    border-radius: 0.125rem;
+    color: rgb(255, 255, 255);
+`

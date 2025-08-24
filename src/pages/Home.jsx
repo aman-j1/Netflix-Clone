@@ -18,7 +18,6 @@ const LandingPage = () => {
           <ReasonCard />
           <FAQ />
           <BottomForm />
-          <Footer />
         </div>
       </div>
     </>
